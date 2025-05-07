@@ -1,8 +1,9 @@
 # EX 4 C program to read the age of a person and determine whether he is eligible for marriage (eligible if age ≥ 21).
-## AIM:
+## DATE:
+## Aim:
 To write a C program to read the age of a person and determine whether he is eligible for marriage (eligible if age ≥ 21).
 
-## Algorithm
+## Algorithm:
 1. Start. 
 2. Declare a variable value of type char. 
 3. Prompt the user to enter a value. 
@@ -14,19 +15,20 @@ To write a C program to read the age of a person and determine whether he is eli
 
 ## Program:
 ```
-#include<stdio.h> 
-int main(){ 
-char p1; 
-scanf("%c", &p1); 
-if(p1=='P') 
-{ 
-printf("Present"); 
-} 
-return 0; 
+#include <stdio.h>
+int main()
+{
+    int age;
+    scanf("%d",&age);
+    if(age>=21)
+    printf("He is eligible for marriage\n");
+    else
+    printf("He is Not eligible for marriage\n");
+    return 0;   
 }
 ```
 ## Output:
-![image](https://github.com/user-attachments/assets/d71a7160-d610-4c9e-99ac-f3a09c2f279f)
+![Screenshot_6-5-2025_114950_training saveetha in](https://github.com/user-attachments/assets/7a58f5a5-7c60-401f-bfbc-16b710cdfff4)
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
