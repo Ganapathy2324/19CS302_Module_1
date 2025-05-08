@@ -1,11 +1,11 @@
 # EX 5 C program to calculate the total marks, average, and percentage of marks obtained in six subjects.
 ## DATE:
 ## AIM:
-To write a C program to calculate the total marks, average, and percentage of marks obtained in seven subjects.
+To write a C program to calculate the total marks, average, and percentage of marks obtained in six subjects.
 
 ## Algorithm
 1. Start. 
-2. Declare three variable value of type int for marks. 
+2. Declare six variable value of type int for marks. 
 3. Prompt the user to enter a value. 
 4. Read the value using scanf. 
 5. Find total and average. 
@@ -14,17 +14,21 @@ To write a C program to calculate the total marks, average, and percentage of ma
 
 ## Program:
 ```
-#include <stdio.h> 
-int main() { 
-    int sub1, sub2, sub3, total; 
-    float average; 
-    scanf("%d %d %d", &sub1,&sub2,&sub3); 
-    total = sub1 + sub2 + sub3; 
-    average = total / 3.0; 
-    printf("\nTotal : %d\n", total); 
-    printf("Average : %.2f\n", average); 
-    return 0; 
-} 
+#include <stdio.h>
+int main()
+{
+    int m1, m2, m3, m4, m5, m6;
+    float total, average, percentage;
+    scanf("%d %d %d %d %d %d", &m1, &m2, &m3, &m4, &m5, &m6);
+    total = m1 + m2 + m3 + m4 + m5 + m6;
+    average = total / 6.0;
+    percentage = average;  
+    printf("Total marks = %.2f\n", total);
+    printf("Average marks = %.2f\n", average);
+    printf("Percentage = %.2f\n", percentage);
+    return 0;
+}
+
 ```
 
 ## Output:
